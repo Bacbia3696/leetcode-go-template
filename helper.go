@@ -28,7 +28,7 @@ type Node struct {
 // this is so clever trick
 const null = math.MinInt
 
-func buildList(a []int) *ListNode {
+func buildList(a ...int) *ListNode {
 	var prev *ListNode
 	for i := len(a) - 1; i >= 0; i-- {
 		tp := ListNode{a[i], prev}
@@ -37,7 +37,7 @@ func buildList(a []int) *ListNode {
 	return prev
 }
 
-func buildTree(a []int) *TreeNode {
+func buildTree(a ...int) *TreeNode {
 	if len(a) == 0 {
 		return nil
 	}

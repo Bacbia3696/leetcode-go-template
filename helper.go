@@ -25,7 +25,7 @@ type Node struct {
 	Neighbors []*Node
 }
 
-// this is so cleaver trick
+// this is so clever trick
 const null = math.MinInt
 
 func buildList(a []int) *ListNode {
